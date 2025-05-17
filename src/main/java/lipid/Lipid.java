@@ -6,7 +6,7 @@ public class Lipid {
     private final int compoundId;
     private final String name;
     private final String formula;
-    private final String lipidType; // !! OPTIONAL TODO -> TRANSFORM INTO AN ENUMERATION
+    private final String lipidType;
     private final int carbonCount;
     private final int doubleBondsCount;
 
@@ -54,8 +54,7 @@ public class Lipid {
 
     @Override
     public boolean equals(Object o) {
-        if (!(o instanceof Lipid)) return false;
-        Lipid lipid = (Lipid) o;
+        if (!(o instanceof Lipid lipid)) return false;
         return compoundId == lipid.compoundId;
     }
 
